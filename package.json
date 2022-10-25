@@ -1,11 +1,11 @@
 {
     "name": "testmoji",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "private": true,
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "preversion": "git add .",
-        "tag": "(cd front && npm version --no-commit-hooks \"$npm_config_to\") && (cd back && npm version --no-commit-hooks \"$npm_config_to\") && npm version --no-commit-hooks --force -m \"🔖 %s\" \"$npm_config_to\"",
+        "tag": "(cd front && npm version --no-commit-hooks \"$npm_config_to\") && (cd back && npm version --no-commit-hooks \"$npm_config_to\") && npm version --commit-hooks=false --force -m \"🔖 %s\" \"$npm_config_to\"",
         "postversion": "git push && git push --tags"
     },
     "engines": {
