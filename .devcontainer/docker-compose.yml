@@ -1,0 +1,20 @@
+version: '3'
+services:
+  testmoji_container:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../:/app_testmoji:rw
+      - ~/.ssh:/.ssh
+    ports:
+      - '5000:5000'
+      - '3000:3000'
+    networks:
+      - testmoji_network
+
+networks:
+  testmoji_network:
+    driver: "bridge"

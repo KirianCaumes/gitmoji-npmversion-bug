@@ -1,0 +1,10 @@
+{
+  "name": "testmoji",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "testmoji_container",
+  "postCreateCommand": "bash .devcontainer/init.sh",
+  "workspaceFolder": "/app_testmoji",
+  "extensions": [
+    "fudge.auto-using"
+  ]
+}
