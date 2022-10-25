@@ -1,5 +1,7 @@
 # testmoji
 
+⚠️ Temporary project, to be deleted ⚠️
+
 ## Run
 
 Open folder with Visual Studio Code.
